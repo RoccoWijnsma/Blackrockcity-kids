@@ -7,6 +7,9 @@ export default function (eleventyConfig) {
   // site works both on a bare domain and under github.io/<repo>/.
   eleventyConfig.addPlugin(HtmlBasePlugin);
 
+  // Nette typografie: krulletjes in plaats van rechte aanhalingstekens.
+  eleventyConfig.amendLibrary("md", (md) => md.set({ typographer: true }));
+
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   // Alleen aanwezig zodra er een eigen domein aan Pages gekoppeld is.
   if (fs.existsSync("src/CNAME")) eleventyConfig.addPassthroughCopy("src/CNAME");

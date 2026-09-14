@@ -47,6 +47,11 @@ samenvatting: Eén zin die onder de titel komt te staan en in Google verschijnt.
   20–29 Voorbereiden, 30–39 Op de playa, 40–49 Naar huis, 50+ Naslag. Laat gaten tussen de
   nummers, dan kun je er later makkelijk iets tussen schuiven.
 
+> **Let op bij dubbele punten.** Staat er in `titel` of `samenvatting` een dubbele punt gevolgd
+> door een spatie, zet de hele waarde dan tussen aanhalingstekens:
+> `samenvatting: "Wat je afspreekt: naamlabels en afspraken."` Zonder die aanhalingstekens leest
+> YAML het als een nieuwe sleutel en mislukt de build.
+
 Menu, voettekst en de vorige/volgende-knoppen vullen zichzelf — je hoeft alleen het bestand
 neer te zetten.
 
