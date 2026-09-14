@@ -1,0 +1,31 @@
+---
+layout: base.njk
+---
+<article>
+  <header class="paginakop">
+    {% if sectie %}<p class="sectielabel">{{ sectie }}</p>{% endif %}
+    <h1>{{ titel }}</h1>
+    {% if samenvatting %}<p class="lead">{{ samenvatting }}</p>{% endif %}
+  </header>
+
+  {{ content | safe }}
+</article>
+
+{% set vorige = collections.gids | getPreviousCollectionItem %}
+{% set volgende = collections.gids | getNextCollectionItem %}
+{% if vorige or volgende %}
+  <nav class="pager" aria-label="Meer onderwerpen">
+    {% if vorige %}
+      <a href="{{ vorige.url }}" rel="prev">
+        <span>Vorige</span>
+        <strong>{{ vorige.data.titel }}</strong>
+      </a>
+    {% endif %}
+    {% if volgende %}
+      <a class="volgende" href="{{ volgende.url }}" rel="next">
+        <span>Volgende</span>
+        <strong>{{ volgende.data.titel }}</strong>
+      </a>
+    {% endif %}
+  </nav>
+{% endif %}

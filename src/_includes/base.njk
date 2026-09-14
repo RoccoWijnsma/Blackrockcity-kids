@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="{{ site.taal }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if titel %}{{ titel }} · {{ site.naam }}{% else %}{{ site.titel }} — {{ site.tagline }}{% endif %}</title>
+    <meta name="description" content="{{ samenvatting or site.beschrijving }}">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#c2521f">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ site.naam }}">
+    <meta property="og:title" content="{% if titel %}{{ titel }}{% else %}{{ site.titel }}{% endif %}">
+    <meta property="og:description" content="{{ samenvatting or site.beschrijving }}">
+    <meta property="og:locale" content="nl_NL">
+    {% if site.url %}<link rel="canonical" href="{{ site.url }}{{ page.url }}">{% endif %}
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  </head>
+  <body>
+    <a class="skip" href="#inhoud">Naar de inhoud</a>
+
+    <header class="kop">
+      <div class="kop__balk">
+        <a class="merk" href="/">
+          <span class="merk__naam">Black Rock City <em>Kids</em></span>
+          <span class="merk__tagline">{{ site.tagline }}</span>
+        </a>
+        <button class="menuknop" type="button" aria-expanded="false" aria-controls="hoofdnav" hidden>
+          <span class="menuknop__streepjes" aria-hidden="true"></span>
+          Onderwerpen
+        </button>
+      </div>
+    </header>
+
+    <div class="raster">
+      <nav class="zijbalk" id="hoofdnav" aria-label="Onderwerpen">
+        {% for groep in collections.gids | perSectie %}
+          <p class="zijbalk__kop">{{ groep.naam }}</p>
+          <ul class="zijbalk__lijst">
+            {% for item in groep.paginas %}
+              <li>
+                <a href="{{ item.url }}"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.data.titel }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endfor %}
+      </nav>
+
+      <main id="inhoud">
+        {{ content | safe }}
+      </main>
+    </div>
+
+    <footer class="voet">
+      <div class="voet__binnen">
+        <nav class="voet__nav" aria-label="Alle onderwerpen">
+          {% for groep in collections.gids | perSectie %}
+            <div>
+              <p class="voet__kop">{{ groep.naam }}</p>
+              <ul>
+                {% for item in groep.paginas %}
+                  <li><a href="{{ item.url }}">{{ item.data.titel }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endfor %}
+        </nav>
+        <p class="voet__klein">
+          {{ disclaimer.kort }} {{ disclaimer.lang }}
+          Officiële informatie staat op <a href="{{ disclaimer.bronUrl }}">{{ disclaimer.bronNaam }}</a>.
+        </p>
+        <p class="voet__klein">
+          Laatst bijgewerkt op {{ site.bijgewerkt | datum }}. Tekst mag je vrij overnemen en aanpassen
+          (<a href="https://creativecommons.org/licenses/by/4.0/deed.nl">CC BY 4.0</a>) —
+          Burning Man en Black Rock City zijn merken van Burning Man Project, dat niet bij deze site betrokken is.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Alleen om het menu op smalle schermen in te kunnen klappen. Zonder
+      // JavaScript blijft de navigatie gewoon zichtbaar en werkt alles.
+      (function () {
+        var knop = document.querySelector(".menuknop");
+        var nav = document.getElementById("hoofdnav");
+        if (!knop || !nav) return;
+        knop.hidden = false;
+        document.body.classList.add("js");
+        knop.addEventListener("click", function () {
+          var open = knop.getAttribute("aria-expanded") === "true";
+          knop.setAttribute("aria-expanded", String(!open));
+          nav.classList.toggle("zijbalk--open", !open);
+        });
+      })();
+    </script>
+  </body>
+</html>

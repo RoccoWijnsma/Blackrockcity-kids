@@ -1,0 +1,68 @@
+name: Site bouwen en publiceren
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Nooit twee publicaties tegelijk.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  bouwen:
+    name: Bouwen
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      # Zonder eigen domein staat de site onder github.io/<repo>/ en moet elke
+      # link dat pad ervoor krijgen. Zodra src/CNAME bestaat (eigen domein),
+      # draait alles weer vanaf de wortel.
+      - name: Pad-prefix bepalen
+        id: prefix
+        run: |
+          if [ -f src/CNAME ]; then
+            echo "waarde=/" >> "$GITHUB_OUTPUT"
+          else
+            echo "waarde=/${GITHUB_REPOSITORY#*/}/" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Site bouwen
+        run: npm run build
+        env:
+          ELEVENTY_PATH_PREFIX: ${{ steps.prefix.outputs.waarde }}
+
+      - uses: actions/configure-pages@v5
+        if: github.event_name != 'pull_request'
+
+      - uses: actions/upload-pages-artifact@v3
+        if: github.event_name != 'pull_request'
+        with:
+          path: _site
+
+  publiceren:
+    name: Publiceren
+    if: github.event_name != 'pull_request'
+    needs: bouwen
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4
