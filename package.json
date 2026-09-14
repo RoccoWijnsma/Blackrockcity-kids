@@ -1,0 +1,16 @@
+{
+  "name": "blackrockcity-kids",
+  "version": "0.1.0",
+  "description": "Praktische informatie voor ouders die met kinderen naar Black Rock City gaan",
+  "license": "CC-BY-4.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "clean": "rm -rf _site"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6"
+  }
+}

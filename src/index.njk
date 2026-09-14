@@ -1,0 +1,79 @@
+---
+layout: base.njk
+samenvatting: Praktische, eerlijke informatie voor ouders die met kinderen naar Black Rock City gaan — voorbereiding, paklijst, stof en hitte, veiligheid, en wat er vanuit Nederland bij komt kijken.
+---
+
+<div class="hero breed">
+  <h1>Met kinderen naar Black&nbsp;Rock&nbsp;City</h1>
+  <p class="lead">
+    Een week in de woestijn met je gezin is prachtig en zwaar, en de meeste informatie die je
+    erover vindt is geschreven voor mensen zonder kinderen. Dit is wat wij wél hadden willen
+    weten: praktisch, eerlijk, en zonder mooiere voorstelling van zaken dan er is.
+  </p>
+</div>
+
+<h2 id="begin-hier" style="border-top:0;padding-top:0;margin-top:0">Begin hier</h2>
+
+<ul class="kaarten breed">
+  <li><a class="kaart" href="/gids/is-het-iets-voor-jouw-gezin/">
+    <span class="kaart__titel">Is het iets voor jouw gezin?</span>
+    <span class="kaart__tekst">De eerlijke afweging — inclusief de redenen om het dit jaar nog niet te doen.</span>
+  </a></li>
+  <li><a class="kaart" href="/gids/vanuit-nederland/">
+    <span class="kaart__titel">Vanuit Nederland</span>
+    <span class="kaart__tekst">Vluchten, camper huren, boodschappen in Reno — en de leerplicht, het obstakel waar je niet omheen kunt.</span>
+  </a></li>
+  <li><a class="kaart" href="/gids/tijdlijn/">
+    <span class="kaart__titel">Wat regel je wanneer</span>
+    <span class="kaart__tekst">Van een jaar van tevoren tot de laatste week ervoor, op volgorde.</span>
+  </a></li>
+  <li><a class="kaart" href="/gids/paklijst/">
+    <span class="kaart__titel">Paklijst</span>
+    <span class="kaart__tekst">Alles wat mee moet, met de kindspecifieke dingen apart.</span>
+  </a></li>
+  <li><a class="kaart" href="/gids/stof-hitte-gezondheid/">
+    <span class="kaart__titel">Stof, hitte en gezondheid</span>
+    <span class="kaart__tekst">De belangrijkste pagina van deze site. Lees deze ook als je verder niets leest.</span>
+  </a></li>
+  <li><a class="kaart" href="/gids/veelgestelde-vragen/">
+    <span class="kaart__titel">Veelgestelde vragen</span>
+    <span class="kaart__tekst">Korte antwoorden op de vragen die ouders het vaakst stellen.</span>
+  </a></li>
+</ul>
+
+<h2>Waarom deze site bestaat</h2>
+
+<p>
+  Toen wij het voor het eerst met kinderen wilden doen, bleek bijna alles online gericht op
+  volwassenen die alleen of met vrienden gaan. De vragen die er voor ons toe deden — hoe hou je
+  een peuter koel, wat doe je als je kind je kwijtraakt, hoeveel water heb je met een gezin
+  écht nodig, hoe krijg je kinderen überhaupt de Nederlandse schoolweek uit — moesten we bij
+  elkaar sprokkelen uit losse forumberichten en gesprekken op de playa zelf.
+</p>
+
+<p>
+  Dit is die verzameling, opgeschreven zodat de volgende ouders dat werk niet nog een keer
+  hoeven te doen. Het is geschreven vanuit Nederland, dus er staat expliciet in wat de reis
+  vanaf hier extra ingewikkeld maakt.
+</p>
+
+<div class="kader">
+  <p class="kader__kop">Dit is geen officiële informatie</p>
+  <p>{{ disclaimer.kort }} {{ disclaimer.lang }}</p>
+  <p>De officiële informatie voor gezinnen staat op
+  <a href="{{ disclaimer.bronUrl }}">{{ disclaimer.bronNaam }}</a>.</p>
+</div>
+
+<h2>Alle onderwerpen</h2>
+
+{% for groep in collections.gids | perSectie %}
+  <h3>{{ groep.naam }}</h3>
+  <ul>
+    {% for item in groep.paginas %}
+      <li>
+        <a href="{{ item.url }}">{{ item.data.titel }}</a>
+        {% if item.data.samenvatting %} — <span style="color:var(--zacht)">{{ item.data.samenvatting }}</span>{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endfor %}
