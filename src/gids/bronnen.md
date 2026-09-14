@@ -45,6 +45,30 @@ hele jaar door bij elkaar en organiseert kleinere evenementen dichter bij huis. 
 de beste generale repetitie met kinderen: veel korter, veel goedkoper, en je merkt binnen een
 weekend waar je gezin tegenaan loopt.
 
+## Deze gids gebruiken in een andere AI
+
+Wil je een second opinion vragen aan een andere AI — Gemini, ChatGPT, wat dan ook — dan hoef je
+niets over te typen. Er staan drie dingen klaar.
+
+**[Alles in één bestand](/blackrockcity-kids-volledig.md)** — elke pagina van deze site plus alle
+ruwe data, als één Markdown-bestand van ongeveer 150 kB. Download het en upload het in je
+gesprek. Dit is de makkelijkste route en werkt ook vanaf je telefoon.
+
+**[De gegevens als JSON](/data.json)** — de begroting, het reisschema, het menuplan en de tips
+als machineleesbaar bestand. Handig voor een AI die zelf het web op kan: geef hem gewoon deze
+link.
+
+**Een korte briefing** — het bestand `CONTEXT.md` in de repository vat samen wie er gaan, welke
+keuzes vastliggen en wat er nog open staat. Eén scherm tekst, bedoeld om integraal te plakken
+als je niet het hele bestand wilt uploaden.
+
+<div class="kader kader--tip">
+  <p class="kader__kop">Wat je het beste kunt vragen</p>
+  <p>Een tweede mening is het nuttigst bij de dingen die hier op schattingen berusten: klopt de
+  begroting, zijn er posten vergeten, en wat mist er helemaal? Deze gids is opgebouwd uit
+  tekstbronnen — er zit geen videomateriaal in verwerkt, en daar staat veel in.</p>
+</div>
+
 ## Over deze site
 
 <div class="kader">

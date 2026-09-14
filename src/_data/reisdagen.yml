@@ -1,0 +1,187 @@
+# Het reisschema, dag voor dag, voor twee volwassenen en een kind van vier.
+#
+# De dagen staan met opzet niet op datum maar op afstand tot de poortopening
+# ("T-4" is vier dagen ervoor, "Dag 1" is de eerste hele dag in de stad). Zo
+# blijft het schema bruikbaar welk jaar je ook gaat. Vul je eigen datums in bij
+# `datum` zodra je ze hebt.
+#
+# Dit is een voorstel, geen voorschrift. De bedoeling is dat je er doorheen
+# loopt en aanpast wat voor jullie niet werkt.
+
+dagen:
+  - label: T-4
+    fase: voor
+    datum: null
+    waar: Amsterdam → Reno
+    kop: Vliegen
+    taken:
+      - Vertrek uit Amsterdam, met overstap in de Verenigde Staten.
+      - Aankomst in Reno, taxi naar het hotel.
+      - Niet meer ondernemen. Eten en slapen.
+    eten: Onderweg wat het vliegtuig geeft; 's avonds iets simpels bij het hotel.
+    let_op: >-
+      Negen uur tijdsverschil. Een kind van vier is bij aankomst compleet van
+      slag. Reken erop dat de eerste nacht kort is en plan de volgende dag niets
+      wat mis kan gaan.
+
+  - label: T-3
+    fase: voor
+    datum: null
+    waar: Reno
+    kop: Bijkomen van de jetlag
+    taken:
+      - Uitslapen, maar niet tot de middag — anders schuift het alleen op.
+      - Naar buiten in het daglicht, dat helpt het ritme het snelst.
+      - Kleine boodschappen die niet bederven — tape, folie, jerrycans, koelboxen.
+      - Fietsen kopen of ophalen.
+    eten: Gewoon uit eten. Dit is de laatste week dat dat kan.
+    let_op: Zwembad bij het hotel is goud waard voor een kind dat niet stil kan zitten.
+
+  - label: T-2
+    fase: voor
+    datum: null
+    waar: Reno
+    kop: Camper ophalen
+    taken:
+      - Camper ophalen en uitleg vragen over generator, watertank en vuilwater.
+      - Doorvragen tot je het echt snapt — op de playa kun je niemand bellen.
+      - Alles fotograferen wat al beschadigd is, vóór je wegrijdt.
+      - Tanken, plus een jerrycan voor de generator.
+    eten: Uit eten, en de koelkast van de camper vast aanzetten.
+    let_op: >-
+      Vraag expliciet of Black Rock City is toegestaan en wat de schoonmaakregeling
+      is. Laat dat schriftelijk bevestigen.
+
+  - label: T-1
+    fase: voor
+    datum: null
+    waar: Reno
+    kop: Grote boodschappen en de camper stofdicht maken
+    taken:
+      - De complete boodschappenronde. Reken op een halve dag.
+      - Water kopen — ongeveer 150 liter voor drie personen.
+      - Radiatorfolie op élk raam, van binnen, helemaal dichtgeplakt.
+      - Meubels afdekken met hoeslakens en keukenfolie.
+      - Alles inladen en vastzetten.
+      - Laatste echte douche. Vroeg naar bed.
+    eten: Laatste warme maaltijd die je niet zelf hoeft te koken.
+    let_op: >-
+      Doe dit niet op dezelfde dag dat je de woestijn in gaat. Uitgeput de poort
+      in betaal je de hele week terug.
+
+  - label: Dag 0
+    fase: stad
+    datum: null
+    waar: Reno → Black Rock City
+    kop: De poort door
+    taken:
+      - Vroeg weg, ruim voor het heetst van de dag.
+      - Rijden, ongeveer tweeënhalf uur.
+      - Wachten bij de poort. Dat kan een uur zijn en ook zes.
+      - Kamp opzetten, schaduw eerst.
+      - Naamlabel om, adres op de arm.
+    eten: Broodjes en fruit uit de koelbox. Vandaag niet koken.
+    let_op: >-
+      In de rij: water binnen handbereik, schaduw in de camper, iets te eten,
+      iets te doen, en een plasoplossing. Dit is het zwaarste stuk van de reis
+      voor een kleuter.
+
+  - label: Dag 1
+    fase: stad
+    datum: null
+    waar: Black Rock City
+    kop: Landen
+    taken:
+      - Kamp afmaken, grondankers afdekken en verlichten.
+      - Rondlopen in de buurt, buren leren kennen.
+      - Medische post en informatiepunt opzoeken en aan je kind laten zien.
+      - Programmaboekje doorbladeren, je zoon laat zelf iets kiezen.
+    eten: Zie het menuplan.
+    let_op: Vandaag niets plannen. Iedereen went aan de hitte, het stof en het licht.
+
+  - label: Dag 2 t/m 6
+    fase: stad
+    datum: null
+    waar: Black Rock City
+    kop: Het ritme
+    taken:
+      - "Zes tot negen uur: eropuit, de beste uren van de dag."
+      - "Negen tot twaalf: kamp, ontbijt, schaduw, klusjes."
+      - "Twaalf tot vier: siësta, binnen, koel."
+      - "Vier tot zeven: het ene ding van vandaag."
+      - "Zeven tot negen: zonsondergang, eten, lichten aan."
+      - "Negen tot elf: één avondtocht, dan naar bed."
+    eten: Zie het menuplan.
+    let_op: >-
+      Eén ding per dag, niet meer. En spreek af dat elke ouder één keer per dag
+      een uur voor zichzelf heeft, vast ingepland.
+
+  - label: Dag 7
+    fase: stad
+    datum: null
+    waar: Black Rock City
+    kop: De Man brandt
+    taken:
+      - Overdag rustig aan, want de avond wordt laat.
+      - Extra lange siësta.
+      - Vanaf een afstand kijken, of vanaf het dak van de camper.
+      - Direct daarna naar bed.
+    eten: Vroeg en stevig eten, vóór het donker wordt.
+    let_op: >-
+      Van dichtbij is het te laat, te druk en te veel vuur voor een kind van
+      vier. Van een afstand zie je het prima en ben je binnen tien minuten thuis.
+
+  - label: Dag 8
+    fase: stad
+    datum: null
+    waar: Black Rock City
+    kop: Inpakken, en de Temple
+    taken:
+      - Overdag alles inpakken behalve de bedden en de koelbox.
+      - Overdag naar de Temple, als jullie gaan — uitleggen vóór je binnenloopt.
+      - Vroeg slapen.
+    eten: Restjes opmaken. Wat over is gaat mee terug, dus eet het op.
+    let_op: >-
+      Inpakken op de dag van vertrek doe je in de hitte met een kind dat er klaar
+      mee is. Doe het vandaag.
+
+  - label: Dag 9
+    fase: terug
+    datum: null
+    waar: Black Rock City → Reno
+    kop: Exodus
+    taken:
+      - Line sweep met het hele kamp; je zoon doet mee en is er goed in.
+      - Grijswater en afval op de aangewezen manier afvoeren.
+      - Wegrijden, en rekenen op uren wachten.
+      - Hotel in Reno. Douchen, eten, slapen.
+    eten: Wat je in de auto bij de hand hebt. Niets wat bereid moet worden.
+    let_op: >-
+      Boek geen vlucht op deze dag. Je bent moe op een manier die je zelf
+      onderschat.
+
+  - label: Dag 10
+    fase: terug
+    datum: null
+    waar: Reno
+    kop: Camper inleveren
+    taken:
+      - Camper zo goed mogelijk uitvegen en afspoelen.
+      - Inleveren, schoonmaakafspraak afhandelen.
+      - Spullen wassen of weggeven wat niet mee terug hoeft.
+      - Fietsen weggeven of terugbrengen.
+    eten: Uit eten. Het eerste koude drankje van de week.
+    let_op: Reken op tijd voor het schoonmaken, en weet wat er in je contract staat.
+
+  - label: Dag 11
+    fase: terug
+    datum: null
+    waar: Reno → Amsterdam
+    kop: Naar huis
+    taken:
+      - Vliegen, met overstap.
+      - Alles in gesloten zakken, zodat het stof niet door je koffers trekt.
+    eten: Onderweg.
+    let_op: >-
+      Thuis: alles apart wassen en twee keer. En reken erop dat je zoon een paar
+      dagen een terugval heeft — dat is normaal.

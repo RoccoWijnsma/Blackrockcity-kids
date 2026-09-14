@@ -23,6 +23,8 @@ Een losse build zonder server:
 
 ```bash
 npm run build    # zet de complete site in _site/
+npm test         # controleert links, tabellen en of de totalen kloppen
+npm run bundel   # zet alles in één bestand in export/, voor een andere AI
 ```
 
 `_site/` en `node_modules/` staan in `.gitignore` — die horen niet in de repo.
@@ -73,6 +75,60 @@ Markdown, dus gebruik daar `<p>` en `<strong>`.
   <li>Regel met een vakje ervoor</li>
 </ul>
 ```
+
+## Cijfers staan in datafiles, niet in de tekst
+
+Alles wat een getal of een lijst is, staat in YAML onder `src/_data/`:
+
+| Bestand | Inhoud |
+| --- | --- |
+| `begroting.yml` | Elke uitgave apart, met bron en bandbreedte |
+| `reisdagen.yml` | Het reisschema, dag voor dag |
+| `menu.yml` | Wat je wanneer eet, plus de boodschappenlijst |
+| `tips.yml` | Losse tips met vindplaats |
+
+Pas daar een getal aan en alle tabellen en totalen op de site rekenen zichzelf opnieuw uit. Zo
+staat er nooit een opgeteld bedrag in de tekst dat niet meer klopt met de onderliggende posten —
+en `npm test` controleert dat ook echt.
+
+Elke begrotingspost heeft een veld `bevestigd`. Zolang dat `false` is, krijgt het bedrag op de
+site een vraagteken en telt de build hem mee als "nog onbevestigd":
+
+```
+[invullen] 9 velden nog in te vullen, 30 bedragen nog onbevestigd
+```
+
+Zet `bevestigd: true` zodra je een offerte of een echte prijs hebt.
+
+### Gaten markeren
+
+Wat nog ingevuld moet worden, zet je in een invulkader. Dat valt op de site duidelijk op en
+wordt door de build geteld:
+
+```html
+<div class="invullen">
+  <p>Wat hier nog moet gebeuren.</p>
+</div>
+```
+
+### Tabellen uit data
+
+Genereer tabellen nooit rechtstreeks met een Nunjucks-lus in een Markdown-bestand: markdown-it
+breekt een HTML-blok af zodra er een lege regel in staat, en dan komt er `<p><tr>` uit in plaats
+van een tabel. Gebruik de macro's in `src/_includes/tabellen.njk`, die compacte HTML zonder lege
+regels opleveren. `npm test` vangt het als het toch misgaat.
+
+## Doorgeven aan een andere AI
+
+Drie manieren, oplopend in gemak:
+
+1. **`CONTEXT.md`** — een briefing van één scherm over de reis, de keuzes en wat nog open staat.
+   Plakken en klaar.
+2. **`/data.json`** op de gebouwde site — alle data machineleesbaar, voor een AI die zelf het
+   web op kan.
+3. **`npm run bundel`** — alle pagina's plus alle ruwe data in één Markdown-bestand om te
+   uploaden. De build zet datzelfde bestand ook in de gepubliceerde site, dus je kunt het ook
+   gewoon downloaden via `/blackrockcity-kids-volledig.md`.
 
 ## Live zetten
 

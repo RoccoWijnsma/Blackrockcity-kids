@@ -7,10 +7,13 @@
   "type": "module",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy",
-    "clean": "rm -rf _site"
+    "build": "eleventy && node scripts/bundel.mjs _site",
+    "clean": "rm -rf _site",
+    "bundel": "node scripts/bundel.mjs",
+    "test": "node scripts/controleer.mjs"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.6"
+    "@11ty/eleventy": "^3.1.6",
+    "js-yaml": "^5.4.2"
   }
 }

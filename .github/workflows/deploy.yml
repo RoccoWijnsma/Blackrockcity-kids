@@ -47,6 +47,10 @@ jobs:
         env:
           ELEVENTY_PATH_PREFIX: ${{ steps.prefix.outputs.waarde }}
 
+      # Dode links, kapotte tabellen en totalen die niet met de data kloppen.
+      - name: Controleren
+        run: npm test
+
       # enablement zet Pages zo nodig zelf aan via de API, zodat dat niet
       # eerst handmatig in Settings hoeft. Vandaar pages: write hierboven.
       - uses: actions/configure-pages@v5
