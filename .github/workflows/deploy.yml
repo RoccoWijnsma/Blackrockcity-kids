@@ -47,8 +47,12 @@ jobs:
         env:
           ELEVENTY_PATH_PREFIX: ${{ steps.prefix.outputs.waarde }}
 
+      # enablement zet Pages zo nodig zelf aan via de API, zodat dat niet
+      # eerst handmatig in Settings hoeft. Vandaar pages: write hierboven.
       - uses: actions/configure-pages@v5
         if: github.event_name != 'pull_request'
+        with:
+          enablement: true
 
       - uses: actions/upload-pages-artifact@v3
         if: github.event_name != 'pull_request'

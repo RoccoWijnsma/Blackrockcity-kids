@@ -79,8 +79,9 @@ Markdown, dus gebruik daar `<p>` en `<strong>`.
 Elke push naar `main` bouwt de site en zet hem live. Dat gebeurt via
 `.github/workflows/deploy.yml`.
 
-**Eenmalig aanzetten:** ga in deze repo naar *Settings → Pages* en zet **Source** op
-**GitHub Actions**. Zonder die instelling mislukt de publicatiestap.
+De workflow zet Pages zo nodig zelf aan (`enablement: true` op `actions/configure-pages`), dus
+je hoeft daar in principe niets voor in te stellen. Mislukt dat toch — sommige accounts staan het
+niet toe — zet het dan alsnog handmatig aan: *Settings → Pages*, **Source** op **GitHub Actions**.
 
 Daarna staat de site op `https://roccowijnsma.github.io/Blackrockcity-kids/`.
 
