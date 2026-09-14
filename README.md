@@ -79,9 +79,22 @@ Markdown, dus gebruik daar `<p>` en `<strong>`.
 Elke push naar `main` bouwt de site en zet hem live. Dat gebeurt via
 `.github/workflows/deploy.yml`.
 
-De workflow zet Pages zo nodig zelf aan (`enablement: true` op `actions/configure-pages`), dus
-je hoeft daar in principe niets voor in te stellen. Mislukt dat toch — sommige accounts staan het
-niet toe — zet het dan alsnog handmatig aan: *Settings → Pages*, **Source** op **GitHub Actions**.
+**Eenmalig aanzetten, met de hand.** Ga naar *Settings → Pages* en zet onder
+*Build and deployment* de **Source** op **GitHub Actions**. Daarna draait alles vanzelf.
+
+Die stap is niet te automatiseren. De workflow probeert het wel — `actions/configure-pages`
+staat op `enablement: true` — maar de token waarmee Actions draait mag een Pages-site niet
+aanmaken, ook niet met `pages: write`:
+
+```
+Create Pages site failed. Error: Resource not accessible by integration
+```
+
+Die instelling blijft dus met de hand. `enablement: true` laten staan is verder onschadelijk:
+zodra Pages aanstaat vindt de actie de bestaande site en gebeurt er niets meer.
+
+Is Pages pas aangezet nadat een run al mislukt was, start die run dan opnieuw via
+*Actions → de mislukte run → Re-run all jobs*.
 
 Daarna staat de site op `https://roccowijnsma.github.io/Blackrockcity-kids/`.
 
