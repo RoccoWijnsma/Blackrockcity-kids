@@ -82,7 +82,7 @@ Elke push naar `main` bouwt de site en zet hem live. Dat gebeurt via
 **Eenmalig aanzetten:** ga in deze repo naar *Settings → Pages* en zet **Source** op
 **GitHub Actions**. Zonder die instelling mislukt de publicatiestap.
 
-Daarna staat de site op `https://roccowijnsma.github.io/blackrockcity-kids/`.
+Daarna staat de site op `https://roccowijnsma.github.io/Blackrockcity-kids/`.
 
 Op een pull request draait alleen de bouwstap, zodat je een fout ziet voordat hij live staat.
 
