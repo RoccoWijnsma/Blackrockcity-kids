@@ -44,7 +44,20 @@ for (const bestand of bestanden) {
 // In CI wordt de site gebouwd met een pad-prefix (github.io/<repo>/), dus dan
 // begint elke link daarmee terwijl de bestanden op de wortel staan. Haal dat
 // prefix eraf voordat je vergelijkt, anders lijkt alles dood.
-const prefix = (process.env.ELEVENTY_PATH_PREFIX || "/").replace(/\/+$/, "");
+//
+// Het prefix wordt uit de gebouwde HTML zelf afgeleid en niet uit een
+// omgevingsvariabele: dan klopt het altijd, ook als je dit script los draait na
+// een build waarvan je niet meer weet hoe hij gemaakt is.
+const prefix = await bepaalPrefix();
+
+async function bepaalPrefix() {
+  for (const pagina of paginas) {
+    const inhoud = await fs.readFile(pagina, "utf8");
+    const match = inhoud.match(/href="([^"]*)\/assets\/style\.css"/);
+    if (match) return match[1];
+  }
+  return "";
+}
 
 let aantalLinks = 0;
 for (const pagina of paginas) {
