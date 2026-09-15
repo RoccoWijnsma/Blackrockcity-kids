@@ -67,6 +67,41 @@ tweedehands fiets daar, en je krijgt hem nooit meer stofvrij.
   zaak.</li>
 </ul>
 
+## Welke fiets: simpel wint
+
+De aanbeveling die overal terugkomt is dezelfde: **een mountainbike of een single-speed beach
+cruiser met dikke banden**. Geen racefiets, geen fiets met veel versnellingen.
+
+De reden is niet comfort maar betrouwbaarheid. Elk bewegend onderdeel is een onderdeel dat kan
+vastlopen in het stof — derailleurs, dunne kabels, veertjes. Eén versnelling betekent bijna niets
+wat kapot kan. ([Survival Guide](https://survival.burningman.org/getting-around-brc/bicycles/))
+
+## Smeermiddel: de belangrijkste alinea van deze pagina
+
+<div class="kader kader--let-op">
+  <p class="kader__kop">Geen olie. Geen WD-40. Niets op petroleumbasis.</p>
+  <p>Dit is de fout die de meeste fietsen op de playa fataal wordt. Olie trekt stof aan als niets
+  anders, en de snelste manier om je fiets binnen een dag vast te laten lopen is hem vlak voor
+  vertrek royaal in te smeren.</p>
+  <p>Gebruik een <strong>droog smeermiddel op waxbasis</strong>. Dat blijft schoon en houdt het
+  stof niet vast.</p>
+</div>
+
+Na afloop, als je de fiets wilt houden: eerst afspuiten met een slang, dan schrobben met een
+mengsel van **half azijn, half water** — de azijn neutraliseert het alkali dat anders je
+onderdelen aantast. Goed laten drogen, en pás daarna smeren.
+([Burning Man Journal](https://journal.burningman.org/2023/07/black-rock-city/survive-and-thrive/reliable-playa-bike-tips/))
+
+## Wielen van de bolderkar of fietskar
+
+Voor alles wat je achter je aan trekt geldt: **hoe groter het wiel, hoe beter**. De ondergrens is
+ongeveer **15 cm luchtband**; **25 cm of een echte mountainbikeband** rijdt aanzienlijk lichter.
+Harde plastic wieltjes zakken gewoon weg.
+([ePlaya](https://eplaya.burningman.org/viewtopic.php?t=8813))
+
+Een gewone kinderfietskar van het merk dat je in Nederland achter je fiets hangt, werkt prima —
+dat is wat veel gezinnen doen.
+
 ## Verlichting is geen sfeer
 
 Ook de bolderkar en je zoon zelf moeten verlicht zijn zodra het donker wordt. De grote

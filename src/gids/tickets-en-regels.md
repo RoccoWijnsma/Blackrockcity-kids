@@ -14,7 +14,9 @@ samenvatting: Wie heeft er een ticket nodig, wat kost het, en welk papierwerk ho
 
 ## Wie heeft een ticket nodig
 
-- **Kinderen tot en met twaalf jaar** komen gratis binnen en hebben geen eigen ticket nodig.
+- **Kinderen tot en met twaalf jaar** komen gratis binnen, maar hebben wél een eigen
+  **Kid's Ticket** nodig. Dat kost niets en print je zelf thuis uit — je moet het alleen wél
+  aanvragen. Dit is geen formaliteit om bij de poort achter te komen.
 - **Vanaf dertien jaar** heeft je kind een volledig volwassenenticket nodig. Er is geen
   jeugdtarief. Voor een gezin met twee tieners verdubbelt de ticketpost dus zomaar.
 - **Elk voertuig** heeft daarnaast een aparte **voertuigpas** nodig, los van de tickets. Eén per
@@ -29,7 +31,7 @@ Er is niet één moment waarop je een ticket koopt. Grofweg loopt het zo:
    een paar dagen. Wie zich niet registreert, kan bij die verkoop niets kopen — hoe vroeg je er
    ook bij bent.
 2. **De verkoopmomenten.** Er is meestal een duurdere verkoop vroeg in het jaar, een hoofdverkoop
-   daarna, en een verkoop laat in het seizoen. Daarnaast krijgen geregistreerde theemakampen een
+   daarna, en een verkoop laat in het seizoen. Daarnaast krijgen geregistreerde themakampen een
    eigen toewijzing, en is er een programma met goedkopere tickets voor mensen met een laag
    inkomen.
 3. **Via je kamp.** Als je je bij een familiekamp aansluit, loopt het vaak via de toewijzing van
@@ -44,10 +46,27 @@ Er is niet één moment waarop je een ticket koopt. Grofweg loopt het zo:
 
 ## Wat het ongeveer kost
 
-Prijzen lopen per verkoopronde flink uiteen en gaan elk jaar omhoog. Reken voor de planning met
-enkele honderden euro's per volwassenenticket, plus een voertuigpas in dezelfde orde van
-grootte als een goedkoop ticket. Zie [Wat kost het](/gids/kosten/) voor het complete plaatje,
-waarin de tickets meestal niet eens de grootste post zijn.
+Prijzen lopen per verkoopronde flink uiteen en gaan elk jaar omhoog. Om een idee te geven van de
+orde van grootte, dit waren de tiers in 2026:
+
+| | Prijs |
+| --- | ---: |
+| Hoofdverkoop, laagste tier | $ 550 |
+| Hoofdverkoop, middentier | $ 675 |
+| Hoofdverkoop, "betaal wat je kunt" | $ 775 |
+| Vrijwillig hogere tiers | $ 975 / $ 1.500 / $ 3.000 |
+| Programma voor laag inkomen, op aanvraag | $ 250 |
+| Vroege verkoop met voorrang | 3 tot 5× de normale prijs |
+| **Voertuigpas** | **$ 165** (of $ 75 bij laag inkomen) |
+
+<div class="kader kader--let-op">
+  <p class="kader__kop">Begroot op het middelste tarief, niet op het laagste</p>
+  <p>De goedkoopste twee tiers zijn altijd als eerste uitverkocht. Reken dus met het tarief
+  daarboven, anders klopt je begroting op de dag van de verkoop opeens niet meer.</p>
+</div>
+
+Zie [De begroting, post voor post](/gids/begroting-compleet/) voor het complete plaatje, waarin
+de tickets meestal niet eens de grootste post zijn.
 
 ## Papierwerk bij minderjarigen
 

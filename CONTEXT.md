@@ -76,8 +76,24 @@ vier, met camper, komt het totaal grofweg uit tussen **€ 9.000 en € 21.000**
 | Camperhuur, ruim een week | $ 3.000 – 9.000 |
 | Schoonmaaktoeslag playa | $ 500 – 1.500 |
 | Vluchten Amsterdam–Reno, 3 personen | € 2.400 – 4.200 |
-| Tickets, 2 volwassenen (kind gratis t/m 12) | $ 1.100 – 1.500 |
-| Generatorbrandstof | $ 200 – 500 |
+| Tickets, 2 volwassenen | $ 1.100 – 1.550 |
+| Voertuigpas (vaste prijs 2026) | $ 165 |
+| Generatorbrandstof | $ 160 – 480 |
+
+Ticketprijzen 2026 staan vast: tiers van $550, $675 en $775, plus vrijwillig hogere tiers en een
+programma voor lage inkomens à $250. De twee goedkoopste tiers zijn altijd als eerste weg, dus
+begroot op $775. Een kind tot en met twaalf komt gratis binnen maar heeft wél een **Kid's Ticket**
+nodig dat je zelf thuis uitprint.
+
+### De luchthavenkeuze is doorgerekend
+
+Het goedkoopste ticket levert niets op. Reno is het duurst om heen te vliegen (altijd overstappen)
+maar ligt op 195 km / 2,5 uur. San Francisco en Las Vegas hebben directe vluchten en goedkopere
+tickets, maar liggen op 550 km respectievelijk 790 km — dat kost twee extra camperdagen en fors
+meer brandstof, en die kosten eten het prijsverschil op. Met een vierjarige erbij wint Reno.
+
+Amerikaanse benzine was in 2026 duur: Nevada ± $5,00 per gallon, Californië $5,78. Reken niet met
+Europese intuïtie over goedkope Amerikaanse benzine.
 
 Daarnaast staat er een borg van $ 2.000 – 5.000 tijdelijk vast op de creditcard.
 

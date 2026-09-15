@@ -183,3 +183,115 @@ tips:
       los van de huur en de schoonmaaktoeslag. Zorg dat je limiet dat aankan.
     bron: https://campercompare.com.au/blog/burning-man-rv-rental-guide
     bron_naam: CamperCompare
+
+  - thema: Geld en papieren
+    tip: >-
+      Een kind tot en met twaalf komt gratis binnen, maar heeft wél een eigen
+      Kid's Ticket nodig dat je zelf thuis uitprint. Gratis, maar je moet het
+      aanvragen — niet iets om bij de poort achter te komen.
+    bron: https://survival.burningman.org/kids-and-families/kids-tickets/
+    bron_naam: Survival Guide
+
+  # ------------------------------------------------------------------- fiets --
+  - thema: Fietsen en vervoer
+    tip: >-
+      Smeer je fiets níet met olie of WD-40. Olie trekt playastof aan als niets
+      anders; de snelste manier om je fiets binnen een dag te laten vastlopen is
+      hem vlak voor vertrek royaal in te smeren. Gebruik een droog smeermiddel op
+      waxbasis.
+    bron: https://journal.burningman.org/2023/07/black-rock-city/survive-and-thrive/reliable-playa-bike-tips/
+    bron_naam: Burning Man Journal
+
+  - thema: Fietsen en vervoer
+    tip: >-
+      Neem een single-speed fiets met dikke banden. Elk bewegend onderdeel is er
+      een dat kan vastlopen in het stof — derailleurs en dunne kabels sneuvelen
+      als eerste.
+    bron: https://survival.burningman.org/getting-around-brc/bicycles/
+    bron_naam: Survival Guide
+
+  - thema: Fietsen en vervoer
+    tip: >-
+      Wil je de fiets houden: eerst afspuiten, dan schrobben met half azijn en
+      half water. De azijn neutraliseert het alkali dat anders je onderdelen
+      aantast. Goed laten drogen, en pás daarna smeren.
+    bron: https://journal.burningman.org/2023/07/black-rock-city/survive-and-thrive/reliable-playa-bike-tips/
+    bron_naam: Burning Man Journal
+
+  - thema: Fietsen en vervoer
+    tip: >-
+      Voor alles wat je achter je aan trekt: minimaal 15 cm luchtband, liever 25
+      cm of een echte mountainbikeband. Harde plastic wieltjes zakken weg.
+    bron: https://eplaya.burningman.org/viewtopic.php?t=8813
+    bron_naam: ePlaya
+
+  # ------------------------------------------------------------- stof en huid --
+  - thema: Stof, huid en kleding
+    tip: >-
+      Playa foot is letterlijk een chemische brandwond. Het stof droogt je huid
+      uit, de huid scheurt, en in die scheurtjes komt het alkali. De belangrijkste
+      oorzaak is simpel: blote voeten of open schoenen op de woestijnbodem.
+    bron: https://burningman.org/black-rock-city/preparation/health-safety/playa-foot/
+    bron_naam: Burning Man Project
+
+  - thema: Stof, huid en kleding
+    tip: >-
+      Was 's avonds je voeten in één deel azijn op drie delen water. Dat
+      neutraliseert het alkali. Daarna dik insmeren met een vette crème.
+    bron: https://burningman.org/black-rock-city/preparation/health-safety/playa-foot/
+    bron_naam: Burning Man Project
+
+  - thema: Stof, huid en kleding
+    tip: >-
+      Merinowol is de meest genoemde keuze voor sokken, omdat wol ademt. Het
+      alternatief werkt ook: een pak van twintig goedkope katoenen sokken, elke
+      dag een schoon paar, aan het eind weggooien.
+    bron: https://eplaya.burningman.org/viewtopic.php?t=108295
+    bron_naam: ePlaya
+
+  - thema: Stof, huid en kleding
+    tip: >-
+      Stevige laarzen, geen sneakers. Playastof vreet schoenen met mesh erin.
+    bron: https://www.survivingburningman.com/2018/07/11/day-clothes-vs-night-clothes/
+    bron_naam: Surviving Burning Man
+
+  - thema: Stof, huid en kleding
+    tip: >-
+      Wat eerstekeergangers het vaakst onderschatten is de kou 's nachts — naar
+      een graad of vier en soms lager. Houd één tas apart met alleen warme
+      kleren, want als de zon ondergaat gaat het snel.
+    bron: https://www.survivingburningman.com/2018/07/11/day-clothes-vs-night-clothes/
+    bron_naam: Surviving Burning Man
+
+  - thema: Stof, huid en kleding
+    tip: >-
+      Het masker werkt alleen samen met een afsluitende bril van het ski- of
+      motorcrosstype. Een masker zonder bril laat je ogen onbeschermd, een bril
+      zonder masker laat je ademen in stof.
+    bron: https://frogmask.eu/en-eu/blogs/news/which-dust-mask-for-burning-man
+    bron_naam: Frogmask
+
+  # ---------------------------------------------------------------- het kamp --
+  - thema: Het kamp
+    tip: >-
+      Gewone tentharingen komen er niet in of trekken er zo weer uit. Gebruik
+      betonijzer: ongeveer 35 cm de grond in, 20 tot 25 cm eruit, onder een hoek
+      ingeslagen en zo'n 60 cm buiten de rand van je constructie.
+    bron: https://burningman.org/black-rock-city/preparation/camping-tips/securing-your-structure/
+    bron_naam: Burning Man Project
+
+  - thema: Het kamp
+    tip: >-
+      EL-draad werkt op wisselspanning, dus er zit altijd een batterijpakje met
+      omvormer aan — en dat zoemt hoorbaar. Stop het in je broekzak. Overdag zie
+      je er bovendien niets van.
+    bron: https://learn.sparkfun.com/tutorials/getting-started-with-electroluminescent-el-wire/all
+    bron_naam: SparkFun
+
+  - thema: Eten en drinken
+    tip: >-
+      De officiële norm is 1,5 gallon water per persoon per dag — ongeveer 5,7
+      liter — voor drinken, koken en basaal wassen. Veel mensen nemen meer.
+      Gebruik alleen containers waar eerder uitsluitend drinkwater in zat.
+    bron: https://burningman.org/black-rock-city/preparation/camping-tips/water/
+    bron_naam: Burning Man Project

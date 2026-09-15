@@ -48,23 +48,27 @@ posten:
     categorie: Tickets en toegang
     valuta: usd
     van: 1100
-    tot: 1500
-    berekening: 2 × $550–750
+    tot: 1550
+    berekening: 2 × $550–775
     toelichting: >-
-      Een kind van vier heeft geen ticket nodig; dat geldt tot en met twaalf
-      jaar. Prijzen verschillen per verkoopronde en stijgen elk jaar.
-    bron: https://burningman.org/event/preparation/families/
-    bevestigd: false
+      Gepubliceerde tiers in 2026: $550, $675 en $775, met vrijwillig hogere
+      tiers daarboven. De twee goedkoopste zijn altijd als eerste weg, dus
+      begroot op $775. Een kind van vier heeft een gratis Kid's Ticket nodig
+      dat je zelf uitprint — dat geldt tot en met twaalf jaar.
+    bron: https://burningman.org/black-rock-city/ticketing-information/
+    bevestigd: true
 
   - naam: Voertuigpas
     categorie: Tickets en toegang
     valuta: usd
-    van: 150
-    tot: 225
-    berekening: één per voertuig, los van de tickets
-    toelichting: Zonder deze pas komt de camper de stad niet in.
-    bron: https://burningman.org/event/preparation/families/
-    bevestigd: false
+    van: 165
+    tot: 165
+    berekening: $165 per voertuig in 2026, los van de tickets
+    toelichting: >-
+      Vaste prijs, plus belasting. Bij het programma voor lage inkomens $75.
+      Zonder deze pas komt de camper de stad niet in.
+    bron: https://burningman.org/black-rock-city/ticketing-information/
+    bevestigd: true
 
   # ------------------------------------------------------------------- reis --
   - naam: Vluchten Amsterdam–Reno
@@ -134,24 +138,27 @@ posten:
   - naam: Brandstof rijden
     categorie: Vervoer ter plaatse
     valuta: usd
-    van: 120
-    tot: 280
-    berekening: ±390 km heen en terug, plus rondrijden in Reno
+    van: 110
+    tot: 145
+    berekening: ±470 km totaal, 85–110 liter à ongeveer $1,32
     toelichting: >-
-      Reno–Black Rock City is 121 mijl (195 km) enkele reis. Een camper van het
-      type Class C loopt 10–13 mijl per gallon, een grote Class A 6–8.
-    bron: https://rvshare.com/blog/rv-gas
+      Reno–Black Rock City is 121 mijl (195 km) enkele reis. Een middelgrote
+      camper loopt 10–13 mijl per gallon. Benzine in Nevada stond in 2026 rond
+      de $5,00 per gallon, in Californië $5,78 — reken dus niet met Europese
+      intuïtie over "goedkope Amerikaanse benzine".
+    bron: https://lasvegassun.com/news/2026/apr/10/average-price-of-regular-gas-in-nevada-tops-5/
     bevestigd: false
 
   - naam: Brandstof generator
     categorie: Vervoer ter plaatse
     valuta: usd
-    van: 200
-    tot: 500
-    berekening: ±0,5–1 gallon per draaiuur
+    van: 160
+    tot: 480
+    berekening: 0,5–1 gallon per draaiuur, 8–12 uur per dag, acht dagen
     toelichting: >-
-      Dit is de post die het hardst tegenvalt. Met een kleuter die 's middags moet
-      slapen draait de airco veel meer uren dan je vooraf bedenkt.
+      Dit is de post die het hardst tegenvalt: drie tot negen keer zoveel
+      brandstof als het rijden zelf. Met een kleuter die 's middags moet slapen
+      zit je aan de bovenkant van die reeks, niet aan de onderkant.
     bron: https://burningman.org/event/preparation/black-rock-city-guide/infrastructure/brc-fuel-program/
     bevestigd: false
 
@@ -209,11 +216,15 @@ posten:
   - naam: IJs
     categorie: Eten, water en ijs
     valuta: usd
-    van: 40
-    tot: 90
+    van: 30
+    tot: 70
+    berekening: $3 per blok, elke 24–48 uur bijvullen, twee koelboxen
     toelichting: >-
-      Contant afrekenen, kleine biljetten meenemen. Pinnen kan niet en een
-      geldautomaat is er niet.
+      $3 voor een zak schaafijs van ruim 3 kg, of een blok van ruim 4,5 kg. Het
+      blok is meer ijs voor hetzelfde geld en smelt langzamer. Contant
+      afrekenen, kleine biljetten meenemen — pinnen kan niet en een geldautomaat
+      is er niet.
+    bron: https://www.survivingburningman.com/2017/08/22/keeping-your-cooler-cool-at-burning-man/
     bevestigd: false
 
   # -------------------------------------------------------------- uitrusting --
