@@ -1,0 +1,12 @@
+---
+permalink: /data.json
+eleventyExcludeFromCollections: true
+---
+{
+  "over": "Alle gegevens achter blackrockcity-kids, als één bestand. Bedoeld om door een AI of een script te laten lezen. De bron staat in src/_data/*.yml.",
+  "bijgewerkt": "{{ site.bijgewerkt }}",
+  "begroting": {{ begroting | dump | safe }},
+  "reisdagen": {{ reisdagen | dump | safe }},
+  "menu": {{ menu | dump | safe }},
+  "tips": {{ tips | dump | safe }}
+}

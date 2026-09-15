@@ -1,0 +1,131 @@
+# Wat eten we wanneer — acht dagen, drie personen, waarvan één kleuter.
+#
+# Uitgangspunt: zo min mogelijk koken op de playa. Alles wat je thuis of in Reno
+# kunt voorbereiden, bereid je daar voor. Bevroren maaltijden zijn tegelijk je
+# koelelementen voor de eerste dagen.
+#
+# Pas dit aan naar wat jullie zoon écht eet. In de hitte verdwijnt de eetlust,
+# en dan is "wat hij thuis ook lust" meer waard dan "wat gezond is".
+
+uitgangspunten:
+  - Verse groente is halverwege de week op. Plan de eerste dagen vers, daarna houdbaar.
+  - Avocado's onrijp kopen — op de playa rijpen ze razendsnel.
+  - Elke dag iets zouts, de hele dag door. Je verliest zout sneller dan je denkt.
+  - Ontbijt en avondeten gaan erin; midden op de dag eet bijna niemand.
+  - Koud fruit is het enige wat een oververhit kind zonder morren naar binnen krijgt.
+  - Eet boven een bord of een doek. Kruimels op de grond zijn moop.
+
+dagen:
+  - dag: Dag 0
+    kop: Aankomstdag
+    ontbijt: Hotelontbijt in Reno
+    lunch: Broodjes uit de koelbox, onderweg of in de rij
+    avond: Pasta die thuis is ingevroren, alleen opwarmen
+    snacks: Fruit, crackers, zoutjes
+    voorbereiding: vooraf ingevroren
+
+  - dag: Dag 1
+    kop: Landen
+    ontbijt: Yoghurt met granola, meloen
+    lunch: Wraps met hummus en komkommer
+    avond: Chili uit de pan, thuis ingevroren
+    snacks: Druiven, pretzels, noten
+
+  - dag: Dag 2
+    ontbijt: Pannenkoeken uit een schudfles, met stroop
+    lunch: Brood met pindakaas en banaan
+    avond: Groentesoep met brood
+    snacks: Augurken, kaasblokjes, appel
+
+  - dag: Dag 3
+    ontbijt: Havermout met melkpoeder en rozijnen
+    lunch: Tonijn uit een bakje met crackers
+    avond: Rijst met kip uit blik en kerrie
+    snacks: Sinaasappel, chips, ontbijtkoek
+
+  - dag: Dag 4
+    kop: Halverwege — de verse dingen raken op
+    ontbijt: Eieren, zolang ze er nog zijn
+    lunch: Brood met smeerkaas, laatste komkommer
+    avond: Vriesdroogmaaltijd met heet water
+    snacks: Gedroogde mango, zoute koekjes
+
+  - dag: Dag 5
+    ontbijt: Ontbijtkoek en yoghurtdrank
+    lunch: Ravioli uit blik, koud of lauw
+    avond: Wraps met bonen, mais en kaas
+    snacks: Noten, rozijnen, harde worst
+
+  - dag: Dag 6
+    ontbijt: Havermout, of wat er over is
+    lunch: Crackers met sardines voor de groten, pindakaas voor de kleine
+    avond: Pasta met pesto uit een pot
+    snacks: Wat er nog is
+
+  - dag: Dag 7
+    kop: De avond dat de Man brandt
+    ontbijt: Restjes ontbijt
+    lunch: Licht en vroeg
+    avond: Stevig en vóór het donker — dit wordt een lange avond
+    snacks: Iets zoets voor onderweg
+
+  - dag: Dag 8
+    kop: Opmaken
+    ontbijt: Alles wat nog open staat
+    lunch: Restjes
+    avond: Wat er over is, of een vriesdroogmaaltijd uit de reserve
+    snacks: Laatste zoutjes
+    voorbereiding: niets meer bijkopen — wat over is gaat mee terug
+
+boodschappen:
+  - categorie: Thuis voorbereiden en invriezen
+    waar: thuis
+    items:
+      - Pastasaus of chili, geportioneerd en plat ingevroren
+      - Groentesoep, geportioneerd
+      - Pannenkoekenbeslag in een schudfles
+      - Twee vriesdroogmaaltijden als reserve
+
+  - categorie: Ontbijt
+    waar: reno
+    items:
+      - Havermout, melkpoeder, rozijnen
+      - Yoghurt en yoghurtdrank voor de eerste dagen
+      - Granola, ontbijtkoek
+      - Eieren voor de eerste helft van de week
+
+  - categorie: Brood en beleg
+    waar: reno
+    items:
+      - Brood en wraps, ruim — brood droogt uit, wraps niet
+      - Pindakaas, hagelslag, smeerkaas, hummus
+      - Harde worst en kaas die niet smelt
+
+  - categorie: Houdbaar hoofdgerecht
+    waar: reno
+    items:
+      - Rijst, pasta, pesto
+      - Kip, bonen, mais en ravioli uit blik
+      - Tonijn en sardines in bakjes
+
+  - categorie: Vers, voor de eerste dagen
+    waar: reno
+    items:
+      - Meloen, druiven, sinaasappels, appels, bananen
+      - Komkommer en wortel
+      - Avocado's, onrijp gekocht
+
+  - categorie: Zout en snacks
+    waar: reno
+    items:
+      - Chips, pretzels, zoute crackers
+      - Augurken — zout én vocht in één
+      - Noten en gedroogd fruit
+
+  - categorie: Drinken
+    waar: reno
+    items:
+      - Water, ongeveer 150 liter
+      - Limonadesiroop, zodat je zoon genoeg drinkt
+      - ORS-zakjes voor als het misgaat
+      - Sportdrank of elektrolytentabletten

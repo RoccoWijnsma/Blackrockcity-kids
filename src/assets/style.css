@@ -645,3 +645,177 @@ main > .breed {
     color: #000;
   }
 }
+
+/* ---------------------------------------------------------------
+   Planningspagina's: invulvelden, bedragen, dagen en tips
+   --------------------------------------------------------------- */
+
+/* Zichtbaar gat in de tekst: hier moet Rocco nog iets invullen. */
+.invullen {
+  display: block;
+  border: 1.5px dashed var(--accent);
+  border-radius: var(--radius);
+  background: var(--accent-vlak);
+  padding: 0.9rem 1.1rem;
+  margin: 1.5em 0;
+  font-size: 0.95rem;
+}
+.invullen::before {
+  content: "Nog in te vullen";
+  display: block;
+  font-family: var(--serif);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-tekst);
+  margin-bottom: 0.35em;
+}
+.invullen > :last-child {
+  margin-bottom: 0;
+}
+
+/* Klein merkje achter een bedrag dat nog niet nagezocht of nagebeld is. */
+.onbevestigd {
+  display: inline-block;
+  margin-left: 0.35em;
+  font-size: 0.7rem;
+  line-height: 1;
+  vertical-align: 0.35em;
+  color: var(--waarschuwing);
+  border: 1px solid currentColor;
+  border-radius: 3px;
+  padding: 0.15em 0.3em;
+  cursor: help;
+  white-space: nowrap;
+}
+
+/* Begrotingstabellen: bedragen rechts, totalen zwaarder. */
+.begroting td.geld,
+.begroting th.geld {
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.begroting .post {
+  font-weight: 600;
+}
+.begroting .toelichting {
+  display: block;
+  font-size: 0.87rem;
+  color: var(--zacht);
+  font-weight: 400;
+  margin-top: 0.2em;
+}
+.begroting .subtotaal td {
+  background: var(--bg-3);
+  font-weight: 650;
+  border-bottom: 1px solid var(--rand);
+}
+.begroting .eindtotaal td {
+  background: var(--accent-vlak);
+  font-weight: 700;
+  font-size: 1.05rem;
+  border-top: 2px solid var(--accent);
+  border-bottom: 0;
+}
+
+/* Grote losse getallen, bijvoorbeeld het totaal bovenaan de begroting. */
+.kerncijfers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
+  gap: 1rem;
+  margin: 1.8em 0 2.4em;
+  padding: 0;
+  list-style: none;
+}
+.kerncijfer {
+  background: var(--bg-2);
+  border: 1px solid var(--rand);
+  border-radius: var(--radius);
+  padding: 1rem 1.15rem;
+}
+.kerncijfer__label {
+  display: block;
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--zacht);
+  margin-bottom: 0.3em;
+}
+.kerncijfer__waarde {
+  display: block;
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--accent-tekst);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Eén dag uit het reisschema. */
+.dag {
+  border-left: 2px solid var(--rand);
+  padding: 0 0 0.5rem 1.25rem;
+  margin-left: 0.4rem;
+  position: relative;
+}
+.dag::before {
+  content: "";
+  position: absolute;
+  left: -0.42rem;
+  top: 0.55rem;
+  width: 0.72rem;
+  height: 0.72rem;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 2px solid var(--accent);
+}
+.dag__label {
+  display: inline-block;
+  font-size: 0.72rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--accent-tekst);
+  background: var(--accent-vlak);
+  border-radius: 999px;
+  padding: 0.22em 0.75em;
+  margin-bottom: 0.4em;
+}
+.dag__kop {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 0.15em;
+}
+.dag__waar {
+  font-size: 0.85rem;
+  color: var(--zacht);
+  margin: 0 0 0.7em;
+}
+.dag ul {
+  margin-bottom: 0.8em;
+}
+.dag__regel {
+  font-size: 0.93rem;
+  margin-bottom: 0.4em;
+}
+.dag__regel strong {
+  color: var(--accent-tekst);
+}
+
+/* Eén tip met bronvermelding. */
+.tip {
+  background: var(--bg-2);
+  border: 1px solid var(--rand);
+  border-radius: var(--radius);
+  padding: 0.95rem 1.1rem;
+  margin-bottom: 0.85em;
+}
+.tip p {
+  margin: 0 0 0.4em;
+}
+.tip__bron {
+  font-size: 0.82rem;
+  color: var(--zacht);
+  margin: 0;
+}

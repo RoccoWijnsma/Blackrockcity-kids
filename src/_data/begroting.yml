@@ -1,0 +1,333 @@
+# Begroting voor één gezin: twee volwassenen en een kind van vier, vanuit
+# Nederland, met een gehuurde camper.
+#
+# LEES DIT EERST
+# Alle bedragen zijn schattingen die uit openbare bronnen zijn gehaald, niet uit
+# offertes. Elke post heeft een `bron`. Zolang `bevestigd: false` staat, is het
+# getal niet nagebeld of nagezocht — op de site krijgt het dan een merkje.
+#
+# `van` en `tot` zijn telkens het TOTAAL voor het hele gezin, niet per persoon.
+# Het veld `berekening` laat zien hoe dat totaal is opgebouwd.
+#
+# Dit bestand is met opzet leesbaar voor mens én machine: je kunt het integraal
+# aan een andere AI geven en om een second opinion vragen.
+
+gezin:
+  volwassenen: 2
+  kinderen: 1
+  leeftijd_kinderen: [4]
+  vertrek_vanuit: Nederland
+  onderkomen: gehuurde camper
+
+koers:
+  usd_naar_eur: 0.92
+  bevestigd: false
+  toelichting: >-
+    Voorlopige koers. Controleer de actuele wisselkoers voordat je hierop plant;
+    een paar cent verschil tikt over dit totaal flink door.
+
+# Geen kosten, wel geld dat tijdelijk vaststaat op je creditcard.
+borgsommen:
+  - naam: Borg camper
+    valuta: usd
+    van: 2000
+    tot: 5000
+    bron: https://campercompare.com.au/blog/burning-man-rv-rental-guide
+    bevestigd: false
+  - naam: Borg per gehuurde fiets
+    valuta: usd
+    van: 100
+    tot: 100
+    berekening: $100 per fiets, terug bij inleveren
+    bron: https://playabikerepair.com/products/burning-man-bike-rental
+    bevestigd: false
+
+posten:
+  # ---------------------------------------------------------------- tickets --
+  - naam: Tickets volwassenen
+    categorie: Tickets en toegang
+    valuta: usd
+    van: 1100
+    tot: 1550
+    berekening: 2 × $550–775
+    toelichting: >-
+      Gepubliceerde tiers in 2026: $550, $675 en $775, met vrijwillig hogere
+      tiers daarboven. De twee goedkoopste zijn altijd als eerste weg, dus
+      begroot op $775. Een kind van vier heeft een gratis Kid's Ticket nodig
+      dat je zelf uitprint — dat geldt tot en met twaalf jaar.
+    bron: https://burningman.org/black-rock-city/ticketing-information/
+    bevestigd: true
+
+  - naam: Voertuigpas
+    categorie: Tickets en toegang
+    valuta: usd
+    van: 165
+    tot: 165
+    berekening: $165 per voertuig in 2026, los van de tickets
+    toelichting: >-
+      Vaste prijs, plus belasting. Bij het programma voor lage inkomens $75.
+      Zonder deze pas komt de camper de stad niet in.
+    bron: https://burningman.org/black-rock-city/ticketing-information/
+    bevestigd: true
+
+  # ------------------------------------------------------------------- reis --
+  - naam: Vluchten Amsterdam–Reno
+    categorie: Reis naar Reno
+    valuta: eur
+    van: 2400
+    tot: 4200
+    berekening: 3 × €800–1.400
+    toelichting: >-
+      Altijd met overstap. Vliegen op San Francisco, Sacramento of Las Vegas is
+      vaak honderden euro's per persoon goedkoper, maar kost een extra dag rijden
+      en een extra huurdag.
+    bevestigd: false
+
+  - naam: Hotel in Reno
+    categorie: Reis naar Reno
+    valuta: usd
+    van: 450
+    tot: 750
+    berekening: 3 nachten × $150–250, gezinskamer
+    toelichting: >-
+      Voor de jetlag, de boodschappen en het ophalen van de camper. Met negen uur
+      tijdsverschil en een kind van vier is dit geen luxe.
+    bevestigd: false
+
+  - naam: Eten en drinken in Reno
+    categorie: Reis naar Reno
+    valuta: usd
+    van: 150
+    tot: 300
+    bevestigd: false
+
+  # -------------------------------------------------------------- onderkomen --
+  - naam: Camperhuur, ruim een week
+    categorie: Onderkomen
+    valuta: usd
+    van: 3000
+    tot: 9000
+    toelichting: >-
+      Twee tot drie keer het normale tarief, omdat het voor de playa is. Veel
+      verhuurders verbieden Black Rock City in hun voorwaarden — vraag het
+      schriftelijk na vóór je betaalt.
+    bron: https://campercompare.com.au/blog/burning-man-rv-rental-guide
+    bevestigd: false
+
+  - naam: Schoonmaaktoeslag playa
+    categorie: Onderkomen
+    valuta: usd
+    van: 500
+    tot: 1500
+    toelichting: >-
+      Niet-restitueerbaar bij de meeste verhuurders. Betaalt het stomen van alle
+      ventilatie, nieuwe filters en het stof dat je zelf niet weg krijgt.
+    bron: https://www.elmonterv.com/blog/renting-an-rv-for-burning-man
+    bevestigd: false
+
+  - naam: Vuilwater legen
+    categorie: Onderkomen
+    valuta: usd
+    van: 100
+    tot: 150
+    toelichting: Met drie personen zit de tank sneller vol dan de brochure suggereert.
+    bron: https://trippinginthetropics.com/how-much-does-it-cost-to-go-to-burning-man/
+    bevestigd: false
+
+  # ------------------------------------------------------- vervoer ter plaatse --
+  - naam: Brandstof rijden
+    categorie: Vervoer ter plaatse
+    valuta: usd
+    van: 110
+    tot: 145
+    berekening: ±470 km totaal, 85–110 liter à ongeveer $1,32
+    toelichting: >-
+      Reno–Black Rock City is 121 mijl (195 km) enkele reis. Een middelgrote
+      camper loopt 10–13 mijl per gallon. Benzine in Nevada stond in 2026 rond
+      de $5,00 per gallon, in Californië $5,78 — reken dus niet met Europese
+      intuïtie over "goedkope Amerikaanse benzine".
+    bron: https://lasvegassun.com/news/2026/apr/10/average-price-of-regular-gas-in-nevada-tops-5/
+    bevestigd: false
+
+  - naam: Brandstof generator
+    categorie: Vervoer ter plaatse
+    valuta: usd
+    van: 160
+    tot: 480
+    berekening: 0,5–1 gallon per draaiuur, 8–12 uur per dag, acht dagen
+    toelichting: >-
+      Dit is de post die het hardst tegenvalt: drie tot negen keer zoveel
+      brandstof als het rijden zelf. Met een kleuter die 's middags moet slapen
+      zit je aan de bovenkant van die reeks, niet aan de onderkant.
+    bron: https://burningman.org/event/preparation/black-rock-city-guide/infrastructure/brc-fuel-program/
+    bevestigd: false
+
+  - naam: Fietsen voor de volwassenen
+    categorie: Vervoer ter plaatse
+    valuta: usd
+    van: 160
+    tot: 300
+    berekening: 2 × $80–150, tweedehands
+    toelichting: >-
+      Tweedehands vanaf $80 bij het Kiwanis-fietsprogramma, vanaf $150 bij Reno
+      Bike Project. Achteraf weggeven of terugbrengen kan bij beide.
+    bron: https://playabikerepair.com/products/used-bike-sale
+    bevestigd: false
+
+  - naam: Fietsstoeltje of fietskar voor de kleine
+    categorie: Vervoer ter plaatse
+    valuta: usd
+    van: 50
+    tot: 180
+    toelichting: >-
+      Een kind van vier fietst nog geen kilometers over los stof. Een kar is
+      stabieler en geeft schaduw, maar hapt meer stof; een stoeltje zit hoger en
+      schoner.
+    bevestigd: false
+
+  - naam: Bolderkar met luchtbanden
+    categorie: Vervoer ter plaatse
+    valuta: usd
+    van: 80
+    tot: 200
+    toelichting: >-
+      Met een vierjarige je belangrijkste vervoermiddel. Smalle harde wieltjes
+      zakken weg in het stof; je hebt echt brede of luchtbanden nodig.
+    bevestigd: false
+
+  # -------------------------------------------------------- eten, water, ijs --
+  - naam: Boodschappen voor de week
+    categorie: Eten, water en ijs
+    valuta: usd
+    van: 300
+    tot: 500
+    berekening: 3 personen, 8 dagen
+    bron: https://blog.outdoorherbivore.com/special-events/eating-on-the-playa-food-options-for-burning-man/
+    bevestigd: false
+
+  - naam: Water
+    categorie: Eten, water en ijs
+    valuta: usd
+    van: 40
+    tot: 90
+    berekening: ±150 liter, 6 liter per persoon per dag plus wassen
+    bevestigd: false
+
+  - naam: IJs
+    categorie: Eten, water en ijs
+    valuta: usd
+    van: 30
+    tot: 70
+    berekening: $3 per blok, elke 24–48 uur bijvullen, twee koelboxen
+    toelichting: >-
+      $3 voor een zak schaafijs van ruim 3 kg, of een blok van ruim 4,5 kg. Het
+      blok is meer ijs voor hetzelfde geld en smelt langzamer. Contant
+      afrekenen, kleine biljetten meenemen — pinnen kan niet en een geldautomaat
+      is er niet.
+    bron: https://www.survivingburningman.com/2017/08/22/keeping-your-cooler-cool-at-burning-man/
+    bevestigd: false
+
+  # -------------------------------------------------------------- uitrusting --
+  - naam: Radiatorfolie en tape voor de camper
+    categorie: Uitrusting
+    valuta: usd
+    van: 60
+    tot: 120
+    berekening: ±2 rollen folie van 60 cm × 7,5 m, plus tape
+    toelichting: >-
+      Elk raam van binnen volledig afplakken. Houdt de ochtendzon buiten én het
+      stof, dat anders door gesloten ramen naar binnen trekt.
+    bron: https://www.trippingly.net/burning-man-rv-tips-protection-and-cleanup
+    bevestigd: false
+
+  - naam: Stofbrillen en maskers
+    categorie: Uitrusting
+    valuta: usd
+    van: 60
+    tot: 150
+    berekening: 3 personen, reserve meegerekend
+    toelichting: >-
+      In kindermaat, niet afgeknepen volwassenmaat — die sluit niet aan en
+      filtert dus niets.
+    bevestigd: false
+
+  - naam: Gehoorbescherming voor het kind
+    categorie: Uitrusting
+    valuta: usd
+    van: 25
+    tot: 50
+    toelichting: Een kap, geen dopjes. Thuis al aan laten wennen.
+    bevestigd: false
+
+  - naam: Koelboxen
+    categorie: Uitrusting
+    valuta: usd
+    van: 60
+    tot: 200
+    berekening: twee stuks — drinken en eten apart
+    bevestigd: false
+
+  - naam: Jerrycans en grijswatercan
+    categorie: Uitrusting
+    valuta: usd
+    van: 40
+    tot: 100
+    bevestigd: false
+
+  - naam: Extra schaduw naast de camper
+    categorie: Uitrusting
+    valuta: usd
+    van: 50
+    tot: 200
+    toelichting: Een koele plek buiten waar je kind kan spelen zonder in de zon te zitten.
+    bevestigd: false
+
+  - naam: Kostuums en verlichting
+    categorie: Uitrusting
+    valuta: usd
+    van: 100
+    tot: 400
+    toelichting: >-
+      Verlichting is geen sfeeruitgave maar veiligheid: na zonsondergang moet
+      iedereen zichtbaar zijn, ook het kind en de bolderkar.
+    bevestigd: false
+
+  - naam: Overige kampspullen
+    categorie: Uitrusting
+    valuta: usd
+    van: 100
+    tot: 250
+    toelichting: Tape, tie-wraps, stoelen, bezem, opbergbakken, afvalzakken.
+    bevestigd: false
+
+  # -------------------------------------------------- verzekering en papieren --
+  - naam: Reisverzekering met medische dekking
+    categorie: Verzekering en papieren
+    valuta: eur
+    van: 150
+    tot: 350
+    berekening: 3 personen
+    toelichting: >-
+      Inclusief repatriëring. Lees na of deelname aan een evenement als dit is
+      uitgesloten — dat staat er soms in.
+    bevestigd: false
+
+  - naam: ESTA
+    categorie: Verzekering en papieren
+    valuta: usd
+    van: 60
+    tot: 75
+    berekening: 3 × ongeveer $21
+    toelichting: Ook je kind heeft een eigen paspoort en een eigen ESTA nodig.
+    bron: https://esta.cbp.dhs.gov/
+    bevestigd: false
+
+  # ------------------------------------------------------------- onvoorzien --
+  - naam: Onvoorzien
+    categorie: Onvoorzien
+    valuta: usd
+    van: 400
+    tot: 900
+    berekening: ongeveer tien procent van het totaal
+    toelichting: Er gaat altijd iets kapot, kwijtraken of blijken te ontbreken.
+    bevestigd: false

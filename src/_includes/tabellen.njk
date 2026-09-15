@@ -1,0 +1,62 @@
+{#
+  Tabelmacro's voor de begrotingspagina's.
+
+  Deze staan hier en niet in de Markdown omdat markdown-it een HTML-blok
+  afbreekt zodra er een lege regel in staat — en een Nunjucks-lus laat die lege
+  regels achter. De macro's hieronder gebruiken daarom overal
+  witruimtebeheersing ({%- -%}), zodat er één aaneengesloten blok uit komt.
+#}
+
+{% macro postrij(post, koers) -%}
+<tr><td><span class="post">{{ post.naam }}</span>
+{%- if post.berekening %}<span class="toelichting">{{ post.berekening }}</span>{% endif %}
+{%- if post.toelichting %}<span class="toelichting">{{ post.toelichting }}</span>{% endif %}
+{%- if post.bron %}<span class="toelichting"><a href="{{ post.bron }}">bron</a></span>{% endif %}
+{%- if post.bron_naam and not post.bron %}<span class="toelichting">{{ post.bron_naam }}</span>{% endif %}
+</td><td class="geld">{{ post | euro("van", koers) | bedrag }}
+{%- if not post.bevestigd %}<span class="onbevestigd" title="Nog niet nagezocht of nagebeld">?</span>{% endif %}
+</td><td class="geld">{{ post | euro("tot", koers) | bedrag }}</td></tr>
+{%- endmacro %}
+
+{# Eén categorie: alle posten plus een subtotaalregel. #}
+{% macro begrotingstabel(posten, koers, subtotaallabel) -%}
+<div class="tabelwrap"><table class="begroting"><thead><tr><th>Post</th><th class="geld">Van</th><th class="geld">Tot</th></tr></thead><tbody>
+{%- for post in posten %}{{ postrij(post, koers) }}{% endfor -%}
+<tr class="subtotaal"><td>Subtotaal {{ subtotaallabel }}</td><td class="geld">{{ posten | som("van", koers) | bedrag }}</td><td class="geld">{{ posten | som("tot", koers) | bedrag }}</td></tr>
+</tbody></table></div>
+{%- endmacro %}
+
+{# Alle categorieën op één regel elk, met het eindtotaal eronder. #}
+{% macro totaaltabel(groepen, koers, totaalVan, totaalTot) -%}
+<div class="tabelwrap"><table class="begroting"><thead><tr><th>Categorie</th><th class="geld">Van</th><th class="geld">Tot</th></tr></thead><tbody>
+{%- for groep in groepen %}
+<tr><td class="post">{{ groep.naam }}</td><td class="geld">{{ groep.posten | som("van", koers) | bedrag }}</td><td class="geld">{{ groep.posten | som("tot", koers) | bedrag }}</td></tr>
+{%- endfor %}
+<tr class="eindtotaal"><td>Totaal</td><td class="geld">{{ totaalVan | bedrag }}</td><td class="geld">{{ totaalTot | bedrag }}</td></tr>
+</tbody></table></div>
+{%- endmacro %}
+
+{# Borgsommen: geld dat je terugkrijgt, dus zonder totaalregel. #}
+{% macro borgtabel(borgsommen, koers) -%}
+<div class="tabelwrap"><table class="begroting"><thead><tr><th>Borg</th><th class="geld">Van</th><th class="geld">Tot</th></tr></thead><tbody>
+{%- for post in borgsommen %}{{ postrij(post, koers) }}{% endfor -%}
+</tbody></table></div>
+{%- endmacro %}
+
+{# Eén dag uit het reisschema. #}
+{% macro dagkaart(dag) -%}
+<div class="dag"><span class="dag__label">{{ dag.label }}{% if dag.datum %} · {{ dag.datum }}{% endif %}</span>
+<p class="dag__kop">{{ dag.kop }}</p><p class="dag__waar">{{ dag.waar }}</p><ul>
+{%- for taak in dag.taken %}<li>{{ taak }}</li>{% endfor -%}
+</ul>
+{%- if dag.eten %}<p class="dag__regel"><strong>Eten:</strong> {{ dag.eten }}</p>{% endif %}
+{%- if dag.let_op %}<p class="dag__regel"><strong>Let op:</strong> {{ dag.let_op }}</p>{% endif %}
+</div>
+{%- endmacro %}
+
+{# Eén tip met bronvermelding. #}
+{% macro tipkaart(tip) -%}
+<div class="tip"><p>{{ tip.tip }}</p><p class="tip__bron">
+{%- if tip.bron %}<a href="{{ tip.bron }}">{{ tip.bron_naam or tip.bron }}</a>{% else %}{{ tip.bron_naam }}{% endif %}
+</p></div>
+{%- endmacro %}

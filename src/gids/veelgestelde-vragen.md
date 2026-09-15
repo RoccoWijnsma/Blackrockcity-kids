@@ -7,8 +7,9 @@ samenvatting: Korte antwoorden op de vragen die ouders het vaakst stellen, met e
 
 ## Heeft mijn kind een ticket nodig?
 
-Tot en met twaalf jaar niet. Vanaf dertien wel, en dan een volledig volwassenenticket — er is
-geen jeugdtarief. Elk voertuig heeft daarnaast een aparte voertuigpas nodig.
+Tot en met twaalf jaar is het gratis, maar je moet wél een **Kid's Ticket** aanvragen en thuis
+uitprinten. Vanaf dertien is het een volledig volwassenenticket — er is geen jeugdtarief. Elk
+voertuig heeft daarnaast een aparte voertuigpas nodig, in 2026 $165.
 → [Tickets en regels](/gids/tickets-en-regels/)
 
 ## Hoe oud moet een kind zijn?
